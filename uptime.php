@@ -3,8 +3,6 @@ sleep(rand(0,220));
 
 $uptime_big = file_get_contents("/home/jonathan/uptime/uptime.txt");
 
-system("touch /home/jonathan/cronisworking");
-
 $urls = explode("\n", $uptime_big);
 
 foreach ($urls as $url) {
