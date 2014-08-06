@@ -9,6 +9,7 @@ foreach ($urls as $url) {
 	if ($url == "") continue;
 	$d = file_get_contents($url);
 	if (!$d) {
-//		system("/usr/local/bin/node " . __DIR__ ."/warn.js");
+		system("/usr/local/bin/node " . __DIR__ . "/warn.js");
+		exit;
 	}
 }
